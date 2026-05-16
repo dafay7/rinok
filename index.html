@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>GameSkin Market</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🔥 GameSkin Universe</h1>
+  <button id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+</header>
+
+<nav class="nav">
+  <button onclick="setGame('all')">✨ All Worlds</button>
+  <button onclick="setGame('dota2')">⚔ Dota Heroes</button>
+  <button onclick="setGame('cs2')">🔫 CS Arsenal</button>
+  <button onclick="setGame('rust')">🛡 Rust Survival</button>
+</nav>
+
+<div class="search">
+  <input id="search" placeholder="🔍 Search your item..." oninput="renderItems()">
+</div>
+
+<main id="items" class="grid"></main>
+
+<!-- CART -->
+<div id="cart" class="cart hidden">
+  <h2>🛒 Your Inventory</h2>
+  <div id="cartItems"></div>
+
+  <p id="total"></p>
+
+  <button class="buyBtn" onclick="checkout()">⚡ Checkout</button>
+  <button class="closeBtn" onclick="toggleCart()">✖ Close</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

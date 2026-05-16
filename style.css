@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f0f14;
+  color: white;
+}
+
+.header {
+  background: linear-gradient(90deg, #6B3F69, #A376A2);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 🔥 BUTTONS */
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 14px;   /* ← ОЦЕ ЗАКРУГЛЕННЯ */
+  padding: 10px 14px;
+  transition: 0.2s;
+}
+
+/* HEADER BUTTON */
+#cartBtn {
+  background: white;
+  color: #6B3F69;
+  font-weight: bold;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.nav button {
+  background: #1c1c25;
+  color: white;
+}
+
+.nav button:hover {
+  background: #6B3F69;
+  transform: scale(1.05);
+}
+
+/* SEARCH */
+.search {
+  text-align: center;
+  padding: 10px;
+}
+
+.search input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: #1b1b24;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.img-box {
+  height: 130px;
+  background: linear-gradient(135deg, #6B3F69, #A376A2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  font-size: 14px;
+}
+
+.price {
+  color: #A376A2;
+  font-weight: bold;
+}
+
+/* BUY BUTTON */
+.card button {
+  width: 100%;
+  margin-top: 8px;
+  background: #6B3F69;
+  color: white;
+  border-radius: 14px;
+}
+
+.card button:hover {
+  background: #A376A2;
+}
+
+/* CART */
+.cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #12121a;
+  padding: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.buyBtn {
+  width: 100%;
+  background: #22c55e;
+  color: white;
+  border-radius: 14px;
+  margin-top: 10px;
+}
+
+.closeBtn {
+  width: 100%;
+  margin-top: 5px;
+  background: #333;
+  color: white;
+  border-radius: 14px;
+}
