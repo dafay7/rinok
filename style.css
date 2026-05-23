@@ -55,7 +55,7 @@ button {
 
 .search input {
   padding: 10px;
-  width: 300px;
+  inline-size: 300px;
   border-radius: 12px;
   border: none;
 }
@@ -81,7 +81,7 @@ button {
 }
 
 .img-box {
-  height: 130px;
+  block-size: 130px;
   background: linear-gradient(135deg, #6B3F69, #A376A2);
   display: flex;
   align-items: center;
@@ -104,8 +104,8 @@ button {
 
 /* BUY BUTTON */
 .card button {
-  width: 100%;
-  margin-top: 8px;
+  inline-size: 100%;
+  margin-block-start: 8px;
   background: #6B3F69;
   color: white;
   border-radius: 14px;
@@ -118,10 +118,10 @@ button {
 /* CART */
 .cart {
   position: fixed;
-  right: 0;
-  top: 0;
-  width: 300px;
-  height: 100%;
+  inset-inline-end: 0;
+  inset-block-start: 0;
+  inline-size: 300px;
+  block-size: 100%;
   background: #12121a;
   padding: 15px;
 }
@@ -131,17 +131,31 @@ button {
 }
 
 .buyBtn {
-  width: 100%;
+  inline-size: 100%;
   background: #22c55e;
   color: white;
   border-radius: 14px;
-  margin-top: 10px;
+  margin-block-start: 10px;
 }
 
 .closeBtn {
-  width: 100%;
-  margin-top: 5px;
+  inline-size: 100%;
+  margin-block-start: 5px;
   background: #333;
   color: white;
   border-radius: 14px;
+}
+
+.img-box {
+  block-size: 130px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
 }
